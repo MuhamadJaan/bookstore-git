@@ -43,14 +43,10 @@ let array = [
     },
 ];
 home = "";
-
 for (let index = 0; index < array.length; index++) {
-
     let item = array[index];
     console.log(item);
-
     home += `
-    
     <div class="col-md-4 mt-5">
     <img src="${item.img}" alt="">
     <h1>${item.name}</h1>
@@ -60,7 +56,6 @@ for (let index = 0; index < array.length; index++) {
     <input id="qty${index}" type="number"> <br>
     <button onclick="AddtoCard(${index})" class="mt-3 rounded-pill bg-success text-light">Add to cart</button>
 </div>`
-
 }
 
 document.getElementById('list').innerHTML = home;
@@ -68,8 +63,6 @@ document.getElementById('list').innerHTML = home;
 function AddtoCard(index) {
     let student = array[index];
     let qtyVal =Number(document.getElementById('qty' + index).value);
-    // console.log(qtyVal);
-    console.log(student);
     let cartitems = [];
     if (!localStorage.getItem('cart')) {
         cartitems = [];
