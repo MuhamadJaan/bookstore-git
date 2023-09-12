@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css    ">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container ">
+        <div class="row">
+            <span class="h1 text-center">victor hasan</span>
+            <div class="col-md-12 d-flex justify-content-center mt-5">
+                <a class="text-decoration-none p-3" href="index.html">
+                    <nav class=" text-dark">HOME</nav>
+                </a>
+                <a class="text-decoration-none p-3" href="">
+                    <nav class=" text-dark">ABOUT</nav>
+                </a>
+                <a class="text-decoration-none p-3" href="e-book.html">
+                    <nav class=" text-dark">E-BOOK</nav>
+                </a>
+                <a class="text-decoration-none p-3" href="event.html">
+                    <nav class=" text-dark">EVENT</nav>
+                </a>
+                <a class="text-decoration-none p-3" href="contact.html">
+                    <nav class=" text-dark">CONTACT</nav>
+                </a>
+                <a href="add to cart.html"><i class="fa fa-shopping-cart text-dark mt-3 p-1" aria-hidden="true"></i></a>
+                <h3 id="coiunytt"></h3>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5 pb-5 overflow-hidden">
+        <h1 class="text-center bg-danger text-light py-4">Shopping Cart</h1>
+        <table class="table table-striped table-bordered border-white text-center">
+            <thead class="py-2">
+                <tr>
+                    <th colspan="2">Item</th>
+                    <th scope="col">Category</th>
+                    <th scope="col">Quantity</th>
+                    <th scope="col">Unit Price</th>
+                    <th scope="col">Total Price</th>
+                    <th scope="col">Remove</th>
+                </tr>
+            </thead>
+            <tbody id="CartTable">
+                <!-- <tr  class="bg-danger">
+                    <td class="text-light">1</td>
+                    <td class="text-start text-light" colspan="2">Gone(2019)</td>
+                    <td class="text-light">Fiction</td>
+                    <td class="text-light">1</td>
+                    <td class="text-light">941</td>
+                    <td class="text-light">941</td>
+                    <td class="text-light"><i class="bi bi-dash-square-fill h5 text-light"></i></td>
+                </tr>
+                <tr>
+                    <td class="text-light">2</td>
+                    <td colspan="2">Hamlet(2015)</td>
+                    <td>Fiction</td>
+                    <td>2</td>
+                    <td>265</td>
+                    <td>530</td>
+                    <td><i class="bi bi-dash-square-fill h5 text-light"></i></td>
+                </tr>
+                <tr class="bg-danger">
+                    <td class="text-light">3</td>
+                    <td class="text-start text-light" colspan="2">I Dare You</td>
+                    <td class="text-light">Fiction</td>
+                    <td class="text-light">6</td>
+                    <td class="text-light">895</td>
+                    <td class="text-light">5370</td>
+                    <td><i class="bi bi-dash-square-fill h5 text-light"></i></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td class="text-start" colspan="2">Secular And Nationalist Jinnah(2017)</td>
+                    <td>Biography</td>
+                    <td>3</td>
+                    <td>1035</td>
+                    <td>3105</td>
+                    <td><i class="bi bi-dash-square-fill h5  text-light"></i></td>
+                </tr>
+                <tr class="bg-danger">
+                    <td class="text-light">5</td>
+                    <td class="text-start text-light" colspan="2">Pakistan A Personal History(2012)</td>
+                    <td class="text-light">Biography</td>
+                    <td class="text-light">1</td>
+                    <td class="text-light">761</td>
+                    <td class="text-light">761</td>
+                    <td><i class="bi bi-dash-square-fill h5 text-primary text-light"></i></td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td class="text-start" colspan="2">War The Definitive Visual History(2020)</td>
+                    <td>History</td>
+                    <td>3</td>
+                    <td>2701</td>
+                    <td>2801</td>
+                    <td><i class="bi bi-dash-square-fill h5 text-light"></i></td>
+                </tr>
+                <tr class="bg-danger">
+                    <td class="text-light">7</td>
+                    <td class="text-start text-light" colspan="2">The Hero(2019)</td>
+                    <td class="text-light">History</td>
+                    <td class="text-light">3</td>
+                    <td class="text-light">751</td>
+                    <td class="text-light">1602</td>
+                    <td><i class="bi bi-dash-square-fill h5 text-light"></i></td>
+                </tr> -->
+            </tbody>
+        </table>
+        <div class="container">
+            <div class="d-flex justify-content-around">
+                <p>Total Quantity</p>
+                <p id="totalQty">19</p>
+                <p>Total Price</p>
+                <p id="totalPrice">15110</p>
+                <button type="button" class="btn btn-outline-secondary">Order Now</button>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="container">
+        <div class="row  mt-5">
+            <div class="col-md-3 text-center ">
+                <h2 class="bg-light"> Total Quaintity </h2>
+            </div>
+            <div class="col-md-3 text-center">
+                <li class="list-unstyled mt-2 fw-bolder">Total price</li>
+            </div>
+            <div class="col-md-3 mt-1 text-center">
+                <li class="list-unstyled fw-bolder mt-2">$.17000</li>
+            </div>
+            <div class="col-md-3 text-center mt-2">
+                <button class="fw-bolder text-light bg-success border-0 text-center w- p-2  ">order now</button>
+            </div>
+        </div>
+    </div> -->
+    <div class="container-fluid bg-dark ">
+        <div class="container mt-5 bg-dark text-light  ">
+            <div class="row">
+                <div class="col-md-4 mt-5 ">
+                    <i class="h3 "> About Victor</i>
+                    <p class="mt-5">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis
+                        bibendum auctor, nisi
+                        elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate
+                        cursus a
+                        sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare
+                        odio…
+                    </p>
+                </div>
+                <div class="col-md-4 text-center mt-5 ">
+                    <i class="h3">Upcoming Events</i>
+                    <h5 class="mt-5">AUGUST 24 / 2020 / 12:00 AM</h5>
+                    <span class="mt-5">Fresno, CA – Reading & Signing</span><br>
+                    <var>____________________________________</var>
+                </div>
+                <div class="col-md-4 mt-5 text-center">
+                    <i class="h3 mt-5 mx-3">contact</i><br> <br>
+                    <a href="index.html" class="text-light text-decoration-none">
+                        <nav class="mt-3">HOME</nav>
+                    </a>
+                    <nav class="mt-3" class="text-dark text-decoration-none">ABOUT</nav>
+                    <a href="e-book.html" class="text-light text-decoration-none">
+                        <nav class="mt-3">E-BOOK</nav>
+                    </a>
+                    <a href="event.html" class="text-light text-decoration-none">
+                        <nav class="mt-3">Events</nav>
+                    </a>
+                    <a href="contact.html" class="text-light text-decoration-none">
+                        <nav class="mt-3">CONTACT</nav>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="container text-light mt-5">
+            <div class="row">
+                <div class="col-md-7">
+                    <nav>Copyright © 2023 e-Book Author</nav>
+                </div>
+                <div class="col-md-5">
+                    <div class="d-flex justify-content-evenly">
+                        <nav class="text-success">Home</nav>
+                        <nav>About</nav>
+                        <nav>e-Book</nav>
+                        <nav>Events</nav>
+                        <nav>Contact</nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="list.js"></script>
+</body>
+
+</html>

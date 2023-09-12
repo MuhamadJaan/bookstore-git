@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            background-color: rgb(44, 44, 44);
+            display: flex;
+            justify-content:center;
+            width: 300px;
+            height: 100px;
+            align-items: center;
+        }
+
+        p {
+            /* width: 400px; */
+            text-align: center;
+            margin-left: 20px;
+            color: white;
+            font-weight: bold;
+            display: inline;
+            padding: 10px 20px;
+            border-radius: 8px;
+            background: transparent;
+            color: white;
+            border: 1px solid #ffffff80;
+            transition: .5s ease;
+        }
+
+        p:hover,
+        :focus {
+            background: #00eeff;
+            border: 1px solid #00e1ff;
+            text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff;
+            box-shadow: 0px 0px 5px #00e1ff, 0px 0px 20px #00e1ff, 0px 0px 50px #00e1ff, 0px 0px 100px #00e1ff;
+        }
+
+
+        .convert {
+            padding: 10px 20px;
+            border-radius: 8px;
+            background: transparent;
+            color: white;
+            border: 1px solid #ffffff80;
+            transition: .5s ease;
+        }
+
+        .convert:hover,
+        :focus {
+            background: #00eeff;
+            border: 1px solid #00e1ff;
+            text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff;
+            box-shadow: 0px 0px 5px #00e1ff, 0px 0px 20px #00e1ff, 0px 0px 50px #00e1ff, 0px 0px 100px #00e1ff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+    <button onclick="converttemp()" class="convert">Convert</button>
+    <p id="ans"></p>
+    </div>
+</body>
+<script>
+
+    function tempp(temp) {
+        return (9 / 5) + 32, (- 32) * (5 / 9)
+        // console.log(temp)
+    }
+    let a = tempp(9 / 5 + 32, (- 32) * (5 / 9));
+    function converttemp() {
+        document.getElementById("ans").innerHTML = a.toFixed(2);
+    }
+
+// document.getElementById("ans"). innerHTML = a.toFixed(2);
+</script>
+
+</html>
